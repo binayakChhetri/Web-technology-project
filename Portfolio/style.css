@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Code", sans-serif;
+  margin: 2em auto 0em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Styling the header */
+
+nav {
+  margin-bottom: 100px;
+  width: 90%;
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #0094a8;
+}
+
+/* Setting the color of the icon */
+i {
+  color: #0094a8;
+  font-size: 1.4rem;
+}
+.nav-items-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-items-container > li > a {
+  padding: 0.5em 1em;
+  letter-spacing: 1px;
+  transition: color 0.5s;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  font-size: 0.8em;
+
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height 0.8s;
+}
+
+.sub-menu li {
+  width: 150px;
+  padding: 10px;
+}
+
+.sub-menu li:hover {
+  background-color: #0094a8;
+  color: white;
+  transition: background-color 1s;
+}
+
+.sub-menu a:hover {
+  color: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 3em;
+
+  color: #003041;
+}
+
+.intro img {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 150px;
+}
+
+/* Styling container */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info ul {
+  text-align: center;
+}
+
+.edu-work,
+.skills-hobby {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0em;
+}
+
+.info-writing {
+  height: 0px;
+  overflow: hidden;
+
+  transition: height 0.5s;
+}
+
+.container > .info > .info-writing {
+  width: 40%;
+  text-align: center;
+  line-height: 1.5em;
+  word-spacing: 5px;
+}
+
+/* Styling the table */
+table,
+th,
+tr,
+td {
+  border: solid 1px #0094a8;
+  border-collapse: collapse;
+  padding: 0.3em 1em;
+}
+
+button.logo-title {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: solid 2px #0094a8;
+  color: #0094a8;
+  background-color: #ffffff;
+
+  transition: 0.5s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color;
+
+  margin-bottom: 20px;
+}
+
+button.logo-title:hover {
+  background-color: #0094a8;
+  color: rgb(255, 255, 255);
+  transition-duration: 0.2s;
+}
+
+/* Styling the footer */
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 0.7em 0em;
+  background-color: #0094a8;
+  font-size: 0.8rem;
+}
+
+footer i {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts .item {
+  margin: 1.5em;
+}
+
+/* HOVER AND OTHER EFFECTS
+ */
+
+.show-item {
+  max-height: 200px;
+}
+
+.nav-items-container > li > a:hover {
+  color: #0c5058;
+}
+
+nav > li:hover .show-item {
+  display: block;
+}
+
+.show-info-writing {
+  height: 128px;
+}
